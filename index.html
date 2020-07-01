@@ -63,7 +63,14 @@
     <!--<script src="javascripts/scale.fix.js"></script>-->
     
     <!--<script src="https://w.liqpay.ua/chat" id="ch-widget-loader" crossorigin="anonymous" data-company-id="i58118120710" async/> -->
-    <script src="https://w.liqpay.ua/chat" id="ch-widget-loader" crossorigin="anonymous" data-company-id="i58118120710" async/>
+   <script>
+      window.channelsCB = function() {
+        ChannelsWidget.init({
+          companyId: "i58118120710"
+        });
+      }
+    </script>
+    <script src="https://w.liqpay.ua/chat" crossorigin="anonymous"></script>
     
     
   </body>
